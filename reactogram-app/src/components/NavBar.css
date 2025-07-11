@@ -1,0 +1,47 @@
+.navbar {
+  height: auto;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.searchbox {
+  width: 30vw;
+  padding: 10px;
+}
+
+.searchIcon {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.navbar-profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Responsive for small screens */
+@media only screen and (max-width: 768px) {
+  .searchbox {
+    display: none;
+  }
+
+  .searchIcon {
+    display: block;
+  }
+
+  .navbar-brand {
+    margin-left: 5px !important;
+  }
+
+  .navbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
